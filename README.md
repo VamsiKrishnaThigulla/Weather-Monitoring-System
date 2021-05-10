@@ -62,8 +62,11 @@
   > 3.3V/4096 = 0.0008V = 0.8mV
  - Equations to calculate the temperature
   > VOUT(mV) = 10mV/°C * T
+  
   > T = (ADC_RESULT * VREF)/4096 * 0.01 °C
+  
   > T = (ADC_RESULT * VREF * 100)/4096 °C
+  
   > T = (ADC_RESULT * 330) / 4096 °C
 
 ##### Working of the Photoresistor
