@@ -28,19 +28,26 @@
 3. csv
 4. datetime
 
-
-## Libraries and headers
-- C
- -- tm4c123gh6pm.h
-- Python
- -- Tkinter
- -- matplotlib
- -- csv
- -- datetime
-
 ## Circuit Diagrams
 ![Circuit Diagram for Weather Monitoring System](/Circuit_Diagrams/Circuit_Diagram.jpeg)
 ![Circuit](/Circuit_Diagrams/Circuit.jpeg)
+
+## Connections
+- LM35
+1. The LM35 has three pins.
+2. The first pin is connected to Vcc of the board.
+3. The second pin is the data pin, it is connected to AIN0 i.e. PE3 pin of the board.
+4. The third pin is connected to the GND of the board.
+
+- Photoresistor
+1. The photoresistor has two pins.
+2. The first pin is connected to the Vcc of the board.
+3. The second pin is connected to
+- The AIN1 i.e. PE2 pin on the board
+- The GND pin of the board through a resistor
+
+
+
 
 ### Output
 ![GUI Welcome Screen](/Screenshots/GUI_Open.jpg)
