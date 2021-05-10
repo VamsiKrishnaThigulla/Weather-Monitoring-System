@@ -7,5 +7,5 @@
 ### Output
 ![GUI Welcome Screen](/Screenshots/GUI_Open.jpg)
 ![Display Weather](/Screenshots/Display_Weather.jpg)
-![Weather Plot](/Screenshots/Plot.jpg)
+![Weather Plot](/Screenshots/Plot.png)
 [Recorded Output]("https://www.youtube.com/embed/9_wM76P6ETY")
