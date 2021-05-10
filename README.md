@@ -10,6 +10,7 @@
 - LM35 Temperature Sensor
 
  ![LM35 Analog Temperature Sensor](https://www.electronicwings.com/public/images/user_images/images/Sensor%20%26%20Modules/LM35/LM35%20Pinout.png)
+
 - Photoresistor
 
   ![Photoresistor](https://d12oja0ew7x0i8.cloudfront.net/image-handler/ts/20190820094913/ri/750/src/images/Article_Images/ImageForArticle_18355(1).jpg)
@@ -46,6 +47,29 @@
 - The AIN1 i.e. PE2 pin on the board
 - The GND pin of the board through a resistor
 
+ ##### Working of the LM35 Sensor
+ - The LM35 is a frequently used temperature sensor. It is calibrated to degrees Celsius, ensuring that the readings obtained from the sensor are directly proportional to degrees Celsius values.
+ - The output voltage has a scale factor of 10mV per degree Celsius.
+ - The sensor has a range of -55 oC to 150 oC. Its accuracy ranges from 0.25 oC to 0.75 oC.
+ - The sensor has two configurations:
+ 1. Basic Centigrade configuration
+ 2. Full range Centigrade configuration
+ - Here, the basic configuration is used, which can measure temperature in the range of 2 - 150 oC.
+ - For our purposes, we convert the value obtained into a Fahrenheit value.
+ - The ADC channel in TM4C123GH6PM has 12 bits and a maximum of 4096 steps.
+ - The maximum operating temperature of the LM35 is 300F, consequently, the maximum output will be 3000mV i.e. 3 V.
+ - The resolution obtained in this case, using a Vref of 3.3V is
+  > 3.3V/4096 = 0.0008V = 0.8mV
+ - Equations to calculate the temperature
+  > VOUT(mV) = 10mV/°C * T
+  > T = (ADC_RESULT * VREF)/4096 * 0.01 °C
+  > T = (ADC_RESULT * VREF * 100)/4096 °C
+  > T = (ADC_RESULT * 330) / 4096 °C
+
+##### Working of the Photoresistor
+- The photoresistor has an inversely proportional relationship with the illumination.
+- Here, with ADC of 12 bits, the value of light intensity is obtained as a percentage as
+> L = (ADC_RESULT) / 4096
 
 
 
