@@ -76,10 +76,11 @@
 
 
 
-### Output
+### Screenshots
 ![GUI Welcome Screen](/Screenshots/GUI_Open.jpg)
 ![Display Weather](/Screenshots/Display_Weather.jpg)
 ![Weather Plot](/Screenshots/Plot.png)
+### Recorded Output
 [![Recorded Output](http://img.youtube.com/vi/9_wM76P6ETY/0.jpg)](https://youtu.be/9_wM76P6ETY)
 
 ### Instructions
